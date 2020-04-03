@@ -219,7 +219,14 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>一. 配置GitHub<br>点击New SSH key<br>title随便写<br>终端运行ssh-keygen -t rsa -b 4096 -C “邮箱”<br>运行 cat ~/.ssh/id_rsa.pub，得到一串东西，复制粘贴到key里，点击 Add SSH key<br>运行 ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
+    <p>一. 配置GitHub</p>
+<ol>
+<li><a href="https://github.com/settings/keys" target="_blank" rel="noopener">点击New SSH key</a></li>
+<li>title随便写</li>
+<li>终端运行ssh-keygen -t rsa -b 4096 -C “邮箱”</li>
+<li>运行 cat ~/.ssh/id_rsa.pub，得到一串东西，复制粘贴到key里，点击 Add SSH key</li>
+<li>运行 ssh -T <a href="mailto:git@github.com">git@github.com</a></li>
+</ol>
 <p>二. 配置git<br>依次运行<br>git config –global user.name “英文名”<br>git config –global user.email “邮箱”<br>git config –global push.default matching<br>git config –global core.quotepath false<br>git config –global core.editor “vim”</p>
 <p>三. 使用git的三种方法</p>
 <ol>
